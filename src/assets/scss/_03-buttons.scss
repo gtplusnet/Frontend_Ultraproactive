@@ -1,2 +1,82 @@
 @import "01-variables";
 @import "02-mixins";
+
+*
+{
+	font-family: $lato;
+}
+
+//WITH RADIUS
+.c-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+//NONE-RADIUS
+.c-btn-r0 {
+    @extend .c-btn;
+
+    border-radius: 0rem !important;
+}
+
+//BUTTON SIZES
+.c-btn-xs {}
+
+.c-btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.c-btn-md {}
+
+.c-btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+.c-btn-xl {}
+
+.btn-search
+{
+	padding: 0 13px;
+}
+
+//COLORS
+.c-btn-primary {
+    color: #fff;
+    background-color: $c-btn-1;
+    border-color: $c-btn-1;
+}
+
+.c-btn-secondary
+{
+	color: #fff;
+    background-color: $c-secondary;
+    border-color: $c-secondary;
+}
+
+.c-btn-2
+{
+	color: #fff;
+    background-color: $c-btn-2;
+    border-color: $c-btn-2;
+}

@@ -1,0 +1,111 @@
+@import "../../../styles";
+
+*
+{
+	font-family: $poppins;
+}
+
+.sticky 
+{
+	@include transition(.3s);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba($c-primary, 0.9);
+}
+
+.bg-custom-primary
+{
+	// background-color: $c-primary;
+	background-color: transparent;
+}
+
+header
+{
+	@include transition(.3s);
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+
+	.navbar
+	{
+		.form-control
+		{
+			border-radius: 0;
+		}
+
+		.navbar-nav
+		{
+			.active
+			{
+				@include transition(.3s);
+				border-bottom: 2px solid $c-secondary;
+
+				.nav-link
+				{
+					color: $c-secondary !important;
+				}
+			}
+
+			.nav-item
+			{
+				@include transition(.3s);
+				border-bottom: 2px solid transparent;
+
+				.nav-link
+				{
+					@include text-style($poppins, $reg, 14px);
+					color: $nav-link;
+					padding-left: 1rem;
+					padding-right: 1rem;
+				}
+
+				&:hover
+				{
+					border-bottom: 2px solid $c-secondary;
+
+					.nav-link
+					{
+						@include transition(.3s);
+						color: $c-secondary !important;
+					}
+				}
+			}
+		}
+
+		.navbar-text
+		{
+			.input-group
+			{
+				.input-group-append
+				{
+					.btn
+					{
+						border-radius: 0;
+
+						img
+						{
+							width: 15px;
+						}
+					}
+				}
+			}
+
+			.user-login
+			{
+				.user-login
+				{
+
+				}
+			}
+		}
+	}
+}
+
+footer
+{
+	background-color: #1B3651;
+}
+
+
+

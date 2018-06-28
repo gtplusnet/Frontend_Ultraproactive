@@ -1,31 +1,66 @@
-<section class="header">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Navbar w/ text</a>
+<header id="pageHeader">
+	<nav class="navbar navbar-expand-lg navbar-light bg-custom-primary">
+		<a class="navbar-brand" href="#"><img src="../../../assets/img/logo.png" alt=""></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarText">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			<ul class="navbar-nav mr-auto ml-4">
+				<li class="nav-item">
+					<a class="nav-link" href="#">HOME</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
+					<a class="nav-link" href="#">ABOUT US</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
+					<a class="nav-link" href="#">PRODUCTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">TESTIMONIALS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">CONTACT US</a>
 				</li>
 			</ul>
-			<span class="navbar-text">
-				Navbar text with an inline element
+			<span class="navbar-text d-flex align-items-center">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+					<div class="input-group-append">
+						<button class="btn c-btn-secondary btn-search" type="button"><img src="../../../assets/img/svg/Search.svg" alt=""></button>
+					</div>
+				</div>
+				<div class="mx-3">
+					<a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a>
+				</div>
+				<div class="ml-2 user-login">
+					<a href="#" class="d-flex align-items-center" style="text-decoration: none;">
+						<img src="../../../assets/img/svg/user.svg" alt="" width="15"> 
+						<span class="ml-2" style="color: #FFCC66; font-size: 14px">LOGIN</span>
+					</a>
+				</div>
 			</span>
 		</div>
 	</nav>
-</section>
-<div class="container-fluid">
-	<!-- <ul style="display: flex; list-style-type: none;">
+</header>
+<!-- <ul style="display: flex; list-style-type: none;">
 			<li><a [routerLink]="['']" >HOME</a></li>
-	</ul> -->
-	<router-outlet></router-outlet>
-	this is the footer
-</div>
+</ul> -->
+<router-outlet></router-outlet>
+
+<footer>
+	<div class="container-fluid">
+		 <div class="footer-content d-flex align-items-center py-3">
+		 	<div class="text-light mr-auto">
+		 		POWERED BY: DIGIMA WEB SOLUTIONS INC.
+		 	</div>
+		 	<div class="text-light ">
+		 		© ULTRA PROACTIVE MARKETING INC 2018
+		 	</div>
+		 	<div class="social-icons ml-auto">
+		 		<a href="#"><img src="../../../assets/img/Instagram.png"></a>
+		 		<a href="#" class="px-4"><img src="../../../assets/img/Twitter.png"></a>
+		 		<a href="#"><img src="../../../assets/img/Facebook.png"></a>
+		 	</div>
+		 </div>
+	</div>
+</footer>

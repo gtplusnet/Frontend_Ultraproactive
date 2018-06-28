@@ -1,2 +1,212 @@
-@import "../../../styles"; 
+@import "../../../styles";
 
+body, html
+{
+	height: 100%;
+}
+
+*
+{
+	font-family: $lato;
+}
+
+// HOME
+.home-banner
+{
+	/* The image used */
+	background-image: url("../../../assets/img/banner.jpg");
+
+	/* Full height */
+	height: 100vh;
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+// MAGNENIUM INTRO
+.magnesium
+{
+	.img-holder
+	{
+		/* The image used */
+		background-image: url("../../../assets/img/person.jpg");
+
+		/* Full height */
+		height: 100%;
+		padding: 100px;
+
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media screen  and (max-width: 500px)
+		{
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+// PROMAG PRODUCT
+.promag
+{
+	background-color: #E9E9E9;
+}
+
+// PRODUCTS
+.products
+{
+	.product-header
+	{
+		border-bottom: 1px solid rgba(#000, 0.5);
+
+		a
+		{
+			margin-left: auto;
+		}
+
+		@media screen and (max-width: 500px)
+		{
+			flex-wrap: wrap;
+
+			a
+			{
+				margin-left: 0;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.prod-display-holder
+	{
+		.prod-order
+		{
+			min-width: 224px;
+			max-width: 224px;
+
+			.prod-image
+			{
+				@include transition(0.3s);
+				position: relative;
+				z-index: 1;
+
+				.overlay
+				{
+					@include transition(0.3s);
+					display: none;
+
+					.btn-view-details
+					{
+						@include transition(0.3s);
+						display: none;
+					}
+				}
+
+				&:hover
+				{
+					.overlay
+					{
+						@include transition(0.3s);
+
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 3;
+						min-width: 224px;
+						max-width: 224px;
+						min-height: 224px;
+						max-height: 224px;
+						background-color: rgba($c-third, 0.5);
+
+						.btn-view-details
+						{
+							@include transition(0.3s);
+							display: block;
+						}
+					}
+				}
+			}
+
+			.prod-info
+			{
+
+			}
+
+			.prod-cart
+			{
+
+			}
+		}
+	}
+}
+
+// TESTIMONIAL
+.testimonial
+{
+	/* The image used */
+	background-image: url("../../../assets/img/testimonial-bg.jpg");
+
+	/* Full height */
+	height: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	.card
+	{
+		border-radius: 0;
+
+		.card-body
+		{
+			.img-profile
+			{
+				min-width: 70px;
+				max-width: 70px;
+				
+				img 
+				{
+				    @include transition(.3s);
+				    width: 100%;
+				    border-radius: 100%;
+				    object-fit: cover;
+				    -webkit-filter: grayscale(100%);
+
+				    /* Safari 6.0 - 9.0 */
+				    filter: grayscale(100%);
+
+				    &:hover
+				    {
+				        filter: none;
+				    }
+				}
+			}
+		}
+	}
+
+	h2
+	{
+		img
+		{
+		    margin-top: -30px;
+		}
+	}
+
+}
+
+// CONTACT US
+.contact-us
+{
+	.form-control
+	{
+		border-radius: 0;
+	}
+}

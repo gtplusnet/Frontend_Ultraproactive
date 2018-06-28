@@ -1,0 +1,32 @@
+@import "01-variables";
+@import "02-mixins";
+
+h2
+{
+	@include text-style($poppins, $med, 30px);
+}
+
+p
+{
+	@include text-style($lato, $light, 16px);
+}
+
+.c-primary
+{
+	color: $c-primary;
+}
+
+.c-secondary
+{
+	color: $c-secondary;
+}
+
+.text-dark
+{
+	color: $text-dark !important;
+}
+
+.text-light
+{
+	color: $text-light !important;
+}
