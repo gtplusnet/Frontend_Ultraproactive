@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.832 12.483">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc6;
+      }
+    </style>
+  </defs>
+  <g id="mail" transform="translate(0 -81.824)">
+    <path id="Path_229" data-name="Path 229" class="cls-1" d="M0,81.824V94.307H18.832V81.824Zm9.416,7.709L1.692,82.75H17.14ZM6.339,88.063.926,92.817V83.31Zm.7.616,2.375,2.086,2.375-2.086,5.354,4.7H1.687Zm5.452-.616,5.413-4.754v9.507Z"/>
+  </g>
+</svg>
