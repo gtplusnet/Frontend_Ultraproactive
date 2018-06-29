@@ -11,7 +11,8 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: rgba($c-primary, 0.9);
+	// background-color: rgba($c-primary, 0.9);
+	background-color: $c-primary;
 }
 
 .bg-custom-primary
@@ -23,7 +24,8 @@
 header
 {
 	@include transition(.3s);
-	background-color: rgba($c-primary, 0.4);
+	// background-color: rgba($c-primary, 0.4);
+	background-color: $c-primary;
 	position: fixed;
 	width: 100%;
 	z-index: 99;

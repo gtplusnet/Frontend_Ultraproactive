@@ -4,12 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent } from '../layout/layout.component';
 import { HomeComponent } from '../home/home.component';
+import { AboutUsComponent } from '../about-us/about-us.component';
 
 import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
 const routes: Routes = [
   { path: '', component: LayoutComponent, children: [
-  	{ path: '', component: HomeComponent }
+  	{ path: '', component: HomeComponent },
+  	{ path: 'about-us', component: AboutUsComponent }
   ] }
 ];
 
