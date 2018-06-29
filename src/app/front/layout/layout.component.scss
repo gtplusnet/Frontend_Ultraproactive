@@ -23,6 +23,7 @@
 header
 {
 	@include transition(.3s);
+	background-color: rgba($c-primary, 0.4);
 	position: fixed;
 	width: 100%;
 	z-index: 99;
@@ -64,6 +65,9 @@ header
 				{
 					border-bottom: 2px solid $c-secondary;
 
+					animation: .3s border-bottom;
+					// animation-iteration-count: infinite;
+
 					.nav-link
 					{
 						@include transition(.3s);
@@ -104,7 +108,7 @@ header
 
 footer
 {
-	background-color: #1B3651;
+	background-color: #2A4247;
 }
 
 

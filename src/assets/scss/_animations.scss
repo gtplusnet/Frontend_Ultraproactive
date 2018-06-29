@@ -1,0 +1,9 @@
+@keyframes border-bottom {
+    from {
+    	border-bottom: 1px solid $c-secondary;
+    }
+
+    to {
+    	border-bottom: 2px solid $c-secondary;
+    }
+}
