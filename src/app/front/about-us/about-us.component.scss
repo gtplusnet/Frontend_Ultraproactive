@@ -66,6 +66,7 @@ body, html
 			grid-template-areas:
 				"visionMission visionMission visionMission visionMission"
 				"ourVision ourVision ourMission ourMission"
+				"divider divider divider divider"
 				"coreValues coreValues coreValues coreValues"
 				"distinction integrity filipinoIntegrity sharing"
 				"legalities legalities legalities legalities";
@@ -76,6 +77,7 @@ body, html
 			grid-template-areas:
 				"visionMission visionMission visionMission visionMission"
 				"ourVision ourVision ourMission ourMission"
+				"divider divider divider divider"
 				"coreValues coreValues coreValues coreValues"
 				"distinction distinction integrity integrity"
 				"filipinoIntegrity filipinoIntegrity sharing sharing"
@@ -112,6 +114,20 @@ body, html
 		.g-item-3
 		{
 			grid-area: ourMission;
+		}
+		
+		.divider
+		{
+			border: 0;
+			grid-area: divider;
+			background-color: transparent;
+			display: none;
+			margin-top: 5px;
+
+			@media screen and (max-width: 1366px) 
+			{
+				display: block;
+			}
 		}
 
 		.g-item-4
