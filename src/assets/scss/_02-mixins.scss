@@ -12,3 +12,17 @@
     -o-transition: all $transition ease-in-out;
     transition: all $transition ease-in-out;
 }
+
+@mixin flex()
+{
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+@mixin flex-custom($display, $align-items, $justify-content)
+{
+	display: $display;
+	align-items: $align-items;
+	justify-content: $justify-content;
+}

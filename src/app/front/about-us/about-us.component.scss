@@ -1,10 +1,5 @@
 @import "../../../styles";
 
-body, html 
-{
-    height: 100%;
-}
-
 * 
 {
     font-family: $lato;
@@ -15,11 +10,8 @@ body, html
 	.grid-wrapper
 	{
 		display: grid;
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
-		// grid-template-columns: auto auto;
-		// grid-template-rows: auto auto;
-		grid: auto auto auto auto;
+		grid-template-columns: auto auto;
+		grid-gap: 1rem;
 		grid-template-areas: "aboutUsText aboutUsFigure";
 		margin-top: 50px;
 
@@ -38,8 +30,8 @@ body, html
 		@media screen and (max-width: 500px)
 		{
 			grid-template-areas:
-					"aboutUsFigure aboutUsFigure"
-					"aboutUsText aboutUsText";
+				"aboutUsFigure"
+				"aboutUsText";
 		}
 	}
 }
@@ -85,18 +77,18 @@ body, html
 				"legalities legalities legalities legalities";
 		}
 
-		@media screen and (max-width: 500px) 
+		@media screen and (max-width: 500px)
 		{
 			grid-template-areas:
-				"visionMission visionMission visionMission visionMission"
-				"ourVision ourVision ourVision ourVision"
-				"ourMission ourMission ourMission ourMission"
-				"coreValues coreValues coreValues coreValues"
-				"distinction distinction distinction distinction"
-				"integrity integrity integrity integrity"
-				"filipinoIntegrity filipinoIntegrity filipinoIntegrity filipinoIntegrity"
-				"sharing sharing sharing sharing"
-				"legalities legalities legalities legalities";
+				"visionMission"
+				"ourVision"
+				"ourMission"
+				"coreValues"
+				"distinction"
+				"integrity"
+				"filipinoIntegrity"
+				"sharing"
+				"legalities";
 		}
 
 		.g-item-1
@@ -125,7 +117,7 @@ body, html
 			display: none;
 			margin-top: 5px;
 
-			@media screen and (max-width: 1370px) 
+			@media screen and (max-width: 1370px)
 			{
 				display: block;
 			}

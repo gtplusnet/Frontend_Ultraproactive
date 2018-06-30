@@ -1,0 +1,42 @@
+@import "../../../styles";
+
+*
+{
+    font-family: $lato;
+}
+
+.form-control
+{
+	border-radius: 0;
+}
+
+.card, .card-header
+{
+	border-radius: 0;
+}
+
+.login-section
+{
+	@include flex();
+	background-color: #E6E6E6;
+	height: 100vh;
+
+	form
+	{
+		background-color: #555;
+		// min-width: 400px;
+		// max-width: 400px;
+		// min-height: 500px;
+		// max-height: 500px;
+
+		.card
+		{
+			.card-header
+			{
+				@include flex();
+				background-color: #FFCC66;
+			}
+		}
+	}
+
+}
