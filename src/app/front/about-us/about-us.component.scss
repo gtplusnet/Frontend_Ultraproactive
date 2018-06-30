@@ -83,6 +83,7 @@
 				"visionMission"
 				"ourVision"
 				"ourMission"
+				"divider"
 				"coreValues"
 				"distinction"
 				"integrity"
@@ -121,6 +122,12 @@
 			{
 				display: block;
 			}
+			
+			@media screen and (max-width: 500px)
+			{
+				display: none;
+			}
+
 		}
 
 		.g-item-4
