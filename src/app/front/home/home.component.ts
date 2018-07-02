@@ -6,6 +6,7 @@ import * as $ from "jquery";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
 
   constructor() { }
@@ -13,6 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() 
   {
   		this.parallax();
+      // this.testimonial();
   }
 
   parallax() : void
@@ -120,5 +122,14 @@ export class HomeComponent implements OnInit {
           }
       });
   }
+
+  // testimonial(): void
+  // {
+  //     $('.multiple-items').slick({
+  //       infinite: true,
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3
+  //     });
+  // }
 
 }
