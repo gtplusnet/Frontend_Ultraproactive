@@ -1,0 +1,94 @@
+<section class="register-section">
+	<form action="login_submit" method="get" accept-charset="utf-8">
+		<div class="card">
+			<div class="c-header">
+				<h5 class="text-white">REGISTER AN ACCOUNT</h5>
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="text-light" for="email">EMAIL</label>
+							<input type="password" name="email" class="form-control" placeholder="Email Address">
+						</div>
+						<div class="form-group">
+							<div class="text-light">CUSTOMER NAME</div>
+							<input type="text" name="FirstName" class="form-control mt-2" placeholder="First Name">
+							<input type="text" name="MiddleName" class="form-control my-2" placeholder="Middle Name">
+							<input type="text" name="LastName" class="form-control" placeholder="Last Name">
+						</div>
+						<div class="form-group">
+							<h6 class="text-light">GENDER</h6>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" id="male" value="option1">
+								<label class="form-check-label" for="male">Male</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" id="female" value="option2">
+								<label class="form-check-label" for="female">Female</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="text-light mb-2">BIRTHDATE</div>
+							<div class="form-row">
+								<div class="form-group col-md-5">
+									<select id="inputMonth" class="form-control">
+										<option selected>JANUARY</option>
+										<option>FEBRUARY</option>
+										<option>MARCH</option>
+										<option>APRIL</option>
+										<option>MAY</option>
+										<option>JUNE</option>
+										<option>JULY</option>
+										<option>AUGUST</option>
+										<option>SEPTEMBER</option>
+										<option>OBTOBER</option>
+										<option>NOVEMBER</option>
+										<option>DECEMBER</option>
+									</select>
+								</div>
+								<div class="form-group col-md-3">
+									<select id="inputDate" class="form-control">
+										<option selected>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<select id="inputYear" class="form-control">
+										<option selected>2018</option>
+										<option>2017</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="text-light" for="contactNumber">CONTACT NUMBER</label>
+							<input type="text" name="contactNumber" class="form-control" placeholder="Contact Number">
+						</div>
+						<div class="form-group">
+							<label class="text-light" for="password">PASSWORD</label>
+							<input type="password" name="password" class="form-control" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<label class="text-light" for="repeat-password">REPEAT PASSWORD</label>
+							<input type="password" name="repeat-password" class="form-control" placeholder="Repeat Password">
+						</div>
+						<div class="custom-control custom-checkbox my-1 mr-sm-2">
+							<input type="checkbox" class="custom-control-input" id="termsAndConditions">
+							<label class="custom-control-label" for="termsAndConditions"><a href="#" class="text-light decoration-0">I agree to the <span class="c-primary">Terms of Use and Privacy Policy</span></a></label>
+						</div>
+						<button class="c-btn-r0 c-btn-primary w-100 mt-2">REGISTER</button>
+						<div class="bottom py-3">
+							<h6 class="text-light">OR <a class="c-primary ml-2" [routerLink]="['/login']">Login an Account</a></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</section>

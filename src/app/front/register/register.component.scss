@@ -15,12 +15,12 @@
 	border-radius: 0;
 }
 
-.login-section
+.register-section
 {
 	@include flex();
 	background-color: #E6E6E6;
-	// flex-basis: 500px;
 	height: 100vh;
+	padding-top: 80px;
 
 	@media screen and (max-width: 575px) 
 	{
@@ -31,7 +31,7 @@
 	form
 	{
 		background-color: #555;
-		width: 400px;
+		width: 800px;
 
 		.card
 		{
@@ -45,7 +45,7 @@
 			.card-body
 			{
 				padding: 30px;
-				
+
 				.bottom
 				{
 					@include flex();

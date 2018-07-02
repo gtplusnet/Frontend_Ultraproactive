@@ -7,6 +7,7 @@ import { LayoutComponent } from './front/layout/layout.component';
 import { HomeComponent } from './front/home/home.component';
 import { AboutUsComponent } from './front/about-us/about-us.component';
 import { LoginComponent } from './front/login/login.component';
+import { RegisterComponent } from './front/register/register.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LoginComponent } from './front/login/login.component';
     LayoutComponent,
     HomeComponent,
     AboutUsComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

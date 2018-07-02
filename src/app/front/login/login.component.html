@@ -1,19 +1,23 @@
 <section class="login-section">
 	<form action="login_submit" method="get" accept-charset="utf-8">
 		<div class="card">
-			<div class="card-header">
+			<div class="c-header">
 				<h5 class="text-white">LOGIN YOUR ACCOUNT</h5>
 			</div>
 			<div class="card-body">
 				<div class="form-group">
-					<label for="email">EMAIL</label>
+					<label class="text-light" for="email">EMAIL</label>
 					<input type="text" name="email" class="form-control" placeholder="Email">
 				</div>
 				<div class="form-group">
-					<label for="password">PASSWORD</label>
+					<label class="text-light" for="password">PASSWORD</label>
 					<input type="password" name="password" class="form-control" placeholder="Password">
 				</div>
 				<button class="c-btn-r0 c-btn-primary w-100">LOGIN</button>
+				<div class="bottom py-3">
+					<h6 class="text-light">OR <a class="c-primary ml-2" [routerLink]="['/register']">Register an Account</a></h6>
+					<h6 class="text-light">Forgot Password? <a class="c-primary ml-2 mt-3" href="#">Click Here.</a></h6>
+				</div>
 			</div>
 		</div>
 	</form>

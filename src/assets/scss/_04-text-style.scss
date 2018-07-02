@@ -11,6 +11,16 @@ p
 	@include text-style($lato, $light, 16px);
 }
 
+.decoration-0
+{
+	text-decoration: none !important;
+
+	&:hover
+	{
+		color: $text-light !important;
+	}
+}
+
 .c-primary
 {
 	color: $c-primary;
