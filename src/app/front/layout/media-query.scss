@@ -1,0 +1,40 @@
+@import "../../../styles";
+
+@media screen and (max-width: $laptop) 
+{
+	
+}
+
+@media screen and (max-width: $tablet) 
+{
+	.navbar-nav
+	{
+		margin: 0 !important;
+		@include flex();
+
+		.nav-item
+		{
+			.nav-link
+			{
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+		}
+	}
+
+	.hide-me
+	{
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: $mobile-1) 
+{
+
+}
+
+@media screen and (max-width: $mobile-2) 
+{
+
+}
+

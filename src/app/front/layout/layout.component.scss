@@ -39,6 +39,8 @@ header
 
 		.navbar-nav
 		{
+			margin-left: 2rem;
+
 			.active
 			{
 				@include transition(.3s);
@@ -67,7 +69,7 @@ header
 				{
 					border-bottom: 2px solid $c-secondary;
 
-					animation: .3s border-bottom;
+					// animation: .3s border-bottom;
 					// animation-iteration-count: infinite;
 
 					.nav-link
@@ -76,6 +78,16 @@ header
 						color: $c-secondary !important;
 					}
 				}
+			}
+		}
+
+		.show-me
+		{
+			display: none !important;
+
+			@media screen and (max-width: $tablet)
+			{
+				display: block !important;
 			}
 		}
 
@@ -112,6 +124,8 @@ footer
 {
 	background-color: #1B3651;
 }
+
+@import "media-query";
 
 
 
