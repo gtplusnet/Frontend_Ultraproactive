@@ -1,11 +1,6 @@
 @import "../../../styles";
 
-@media screen and (max-width: $laptop) 
-{
-	
-}
-
-@media screen and (max-width: $tablet) 
+@media screen and (max-width: $tablet)
 {
 	.navbar-nav
 	{
@@ -22,22 +17,22 @@
 		}
 	}
 
-	.hide-me
-	{
-		display: none !important;
-	}
+	grid-template-areas:
+		"logo search cart login menu"
+		"nav-link nav-link nav-link nav-link nav-link";
+
+		.g-item-6
+		{
+			grid-area: menu;
+		}
 }
 
-@media screen and (max-width: $mobile-1) 
+@media screen and (max-width: $mobile-1)
 {
-	nav
-	{
-		
-	}
+	grid-template-columns: auto auto auto auto;
+
+	grid-template-areas:
+		"logo cart login menu"
+		"search search search search"
+		"nav-link nav-link nav-link nav-link";
 }
-
-@media screen and (max-width: $mobile-2) 
-{
-
-}
-

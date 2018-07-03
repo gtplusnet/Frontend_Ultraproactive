@@ -5,7 +5,7 @@
 	font-family: $poppins;
 }
 
-.sticky 
+.sticky
 {
 	@include transition(.3s);
 	position: fixed;
@@ -26,9 +26,14 @@ header
 	@include transition(.3s);
 	// background-color: rgba($c-primary, 0.4);
 	background-color: $c-primary;
-	position: fixed;
-	width: 100%;
+	// position: fixed;
+	// width: 100%;
 	z-index: 99;
+
+	.navbar-expand-lg 
+	{
+	    justify-content: stretch;
+	}
 
 	.navbar
 	{
@@ -36,10 +41,14 @@ header
 		{
 			border-radius: 0;
 		}
+		
+		.navbar-toggler
+		{
+			justify-self: end !important;
+		}
 
 		.navbar-nav
 		{
-			margin-left: 2rem;
 
 			.active
 			{
@@ -80,16 +89,6 @@ header
 				}
 			}
 		}
-
-		.show-me
-		{
-			display: none !important;
-
-			@media screen and (max-width: $tablet)
-			{
-				display: block !important;
-			}
-		}
 		
 		//search
 		.g-item-3
@@ -108,11 +107,23 @@ header
 			}
 		}
 
+		.g-item-4
+		{
+			justify-self: end !important;
+
+			@media screen and (max-width: 991px)
+			{
+				justify-self: center !important;
+			}
+		}
+
 		.user-login
 		{
-			.user-login
-			{
+			justify-self: end !important;
 
+			@media screen and (max-width: 991px)
+			{
+				justify-self: center !important;
 			}
 		}
 	}
@@ -121,17 +132,10 @@ header
 	{
 		display: grid !important;
 		grid-template-columns: auto auto auto auto auto;
-		grid-gap: 1rem;
+		grid-template-rows: auto;
+		grid-column-gap: 1rem;
 		grid-template-areas:
 			"logo nav-link search cart login";
-
-			@media screen and (max-width: 500px)
-			{
-				grid-template-areas:
-					"logo cart login menu menu"
-					"search search search search search"
-					"nav-link nav-link nav-link nav-link nav-link";
-			}
 
 		.g-item-1
 		{
@@ -143,26 +147,23 @@ header
 			grid-area: nav-link;
 		}
 
-		.grid-item-3
+		.g-item-3
 		{
+			grid-column-gap: 180px;
 			grid-area: search;
 		}
 
-		.grid-item-4
+		.g-item-4
 		{
 			grid-area: cart;
 		}
 
-		.grid-item-5
+		.g-item-5
 		{
 			grid-area: login;
 		}
-
-		.grid-item-6
-		{
-			grid-area: menu;
-		}
-
+		
+		@import "media-query";
 	}
 }
 
@@ -171,7 +172,7 @@ footer
 	background-color: #1B3651;
 }
 
-@import "media-query";
+
 
 
 
