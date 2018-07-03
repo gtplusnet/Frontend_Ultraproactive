@@ -1,11 +1,18 @@
 @mixin text-style($ff, $fw, $fz)
 {
-	font-family: $ff;
-	font-weight: $fw;
-	font-size: $fz;
+	font:
+	{
+		family: $ff;
+		weight: $fw;
+		size: $fz
+	}
+
+	// font-family: $ff;
+	// font-weight: $fw;
+	// font-size: $fz;
 }
 
-@mixin transition($transition) 
+@mixin transition($transition)
 {
     -webkit-transition: all $transition ease-in-out;
     -moz-transition: all $transition ease-in-out;
