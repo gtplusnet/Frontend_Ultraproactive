@@ -4,12 +4,8 @@
 	{
 		family: $ff;
 		weight: $fw;
-		size: $fz
+		size: $fz;
 	}
-
-	// font-family: $ff;
-	// font-weight: $fw;
-	// font-size: $fz;
 }
 
 @mixin transition($transition)

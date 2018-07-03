@@ -5,6 +5,8 @@
     font-family: $lato;
 }
 
+/* START OF ABOUT US */
+
 .about-us
 {
 	.grid-wrapper
@@ -26,17 +28,11 @@
 			align-self: center;
 			justify-self: center;
 		}
-
-		@media screen and (max-width: 500px)
-		{
-			grid-template-areas:
-				"aboutUsFigure"
-				"aboutUsText";
-		}
 	}
-}
+}/* END OF ABOUT US */
 
-// VISION MISSION AND CORE VALUES
+/* START OF VISION MISSION AND CORE VALUES */
+
 .vm-cv
 {
 	.grid-wrapper
@@ -52,45 +48,6 @@
 			"visionMission visionMission coreValues coreValues"
 			"ourVision ourMission distinction integrity"
 			"legalities legalities filipinoIntegrity sharing";
-
-
-		@media screen and (max-width: 1370px) 
-		{
-			grid-template-areas:
-				"visionMission visionMission visionMission visionMission"
-				"ourVision ourVision ourMission ourMission"
-				"divider divider divider divider"
-				"coreValues coreValues coreValues coreValues"
-				"distinction integrity filipinoIntegrity sharing"
-				"legalities legalities legalities legalities";
-		}
-
-		@media screen and (max-width: 800px) 
-		{
-			grid-template-areas:
-				"visionMission visionMission visionMission visionMission"
-				"ourVision ourVision ourMission ourMission"
-				"divider divider divider divider"
-				"coreValues coreValues coreValues coreValues"
-				"distinction distinction integrity integrity"
-				"filipinoIntegrity filipinoIntegrity sharing sharing"
-				"legalities legalities legalities legalities";
-		}
-
-		@media screen and (max-width: 500px)
-		{
-			grid-template-areas:
-				"visionMission"
-				"ourVision"
-				"ourMission"
-				"divider"
-				"coreValues"
-				"distinction"
-				"integrity"
-				"filipinoIntegrity"
-				"sharing"
-				"legalities";
-		}
 
 		.g-item-1
 		{
@@ -176,4 +133,4 @@
 		background-color: #fff;
 		border: 1px solid rgba(#000, 0.1);
 	}
-}
+}/* END OF VISION MISSION AND CORE VALUES */

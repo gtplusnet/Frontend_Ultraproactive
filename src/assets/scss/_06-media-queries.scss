@@ -1,0 +1,79 @@
+@import "variables";
+
+@media screen and (max-width: $laptop) 
+{
+	/* START OF ABOUT US */
+
+	.vm-cv
+	{
+		.grid-wrapper
+		{
+			grid-template-areas:
+				"visionMission visionMission visionMission visionMission"
+				"ourVision ourVision ourMission ourMission"
+				"divider divider divider divider"
+				"coreValues coreValues coreValues coreValues"
+				"distinction integrity filipinoIntegrity sharing"
+				"legalities legalities legalities legalities";
+		}
+	}
+
+	/* END OF ABOUT US */
+}
+
+@media screen and (max-width: $tablet) 
+{
+	/* START OF ABOUT US */
+
+	.vm-cv
+	{
+		.grid-wrapper
+		{
+			grid-template-areas:
+				"visionMission visionMission visionMission visionMission"
+				"ourVision ourVision ourMission ourMission"
+				"divider divider divider divider"
+				"coreValues coreValues coreValues coreValues"
+				"distinction distinction integrity integrity"
+				"filipinoIntegrity filipinoIntegrity sharing sharing"
+				"legalities legalities legalities legalities";
+		}
+	}
+
+	/* END OF ABOUT US */
+}
+
+@media screen and (max-width: $mobile) 
+{
+	/* START OF ABOUT US */
+
+	.about-us
+	{
+		.grid-wrapper
+		{
+			grid-template-areas:
+				"aboutUsFigure"
+				"aboutUsText";
+		}
+	{
+
+	.vm-cv
+	{
+		.grid-wrapper
+		{
+			grid-template-areas:
+				"visionMission"
+				"ourVision"
+				"ourMission"
+				"divider"
+				"coreValues"
+				"distinction"
+				"integrity"
+				"filipinoIntegrity"
+				"sharing"
+				"legalities";
+		}
+	}
+
+	/* END OF ABOUT US */
+}
