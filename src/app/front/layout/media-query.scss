@@ -10,7 +10,7 @@
 	.navbar-nav
 	{
 		margin: 0 !important;
-		@include flex();
+		// @include flex();
 
 		.nav-item
 		{
@@ -30,7 +30,10 @@
 
 @media screen and (max-width: $mobile-1) 
 {
-
+	nav
+	{
+		
+	}
 }
 
 @media screen and (max-width: $mobile-2) 

@@ -1,29 +1,7 @@
 <header id="pageHeader">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-custom-primary">
-		<a class="navbar-brand" href="#"><img src="../../../assets/img/logo.png" alt=""></a>
-		<div class="show-me">
-			<span class="navbar-text d-flex align-items-center">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-					<div class="input-group-append">
-						<button class="btn c-btn-secondary btn-search" type="button"><img src="../../../assets/img/svg/Search.svg" alt=""></button>
-					</div>
-				</div>
-				<div class="mx-3">
-					<a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a>
-				</div>
-				<div class="ml-2 user-login">
-					<a [routerLink]="['/login']" class="d-flex align-items-center" style="text-decoration: none;">
-						<img src="../../../assets/img/svg/user.svg" alt="" width="15"> 
-						<span class="ml-2" style="color: #FFCC66; font-size: 14px">LOGIN</span>
-					</a>
-				</div>
-			</span>
-		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarText">
+		<a class="navbar-brand g-item-1" href="#"><img src="../../../assets/img/logo.png" alt=""></a>
+		<div class="collapse navbar-collapse g-item-2" id="navbarText">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
 					<a class="nav-link" [routerLink]="['']">HOME</a>
@@ -41,24 +19,25 @@
 					<a class="nav-link" href="#">CONTACT US</a>
 				</li>
 			</ul>
-			<span class="navbar-text hide-me d-flex align-items-center">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-					<div class="input-group-append">
-						<button class="btn c-btn-secondary btn-search" type="button"><img src="../../../assets/img/svg/Search.svg" alt=""></button>
-					</div>
-				</div>
-				<div class="mx-3">
-					<a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a>
-				</div>
-				<div class="ml-2 user-login">
-					<a [routerLink]="['/login']" class="d-flex align-items-center" style="text-decoration: none;">
-						<img src="../../../assets/img/svg/user.svg" alt="" width="15"> 
-						<span class="ml-2" style="color: #FFCC66; font-size: 14px">LOGIN</span>
-					</a>
-				</div>
-			</span>
 		</div>
+		<div class="input-group search g-item-3">
+			<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+			<div class="input-group-append">
+				<button class="btn c-btn-secondary btn-search" type="button"><img src="../../../assets/img/svg/Search.svg" alt=""></button>
+			</div>
+		</div>
+		<div class="g-item-4">
+			<a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a>
+		</div>
+		<div class="g-item-5 user-login">
+			<a [routerLink]="['/login']" class="d-flex align-items-center" style="text-decoration: none;">
+				<img src="../../../assets/img/svg/user.svg" alt="" width="15"> 
+				<span class="ml-2" style="color: #FFCC66; font-size: 14px">LOGIN</span>
+			</a>
+		</div>
+		<button class="navbar-toggler g-item-6" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
 	</nav>
 </header>
 

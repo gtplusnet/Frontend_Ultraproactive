@@ -90,33 +90,79 @@ header
 				display: block !important;
 			}
 		}
-
-		.navbar-text
+		
+		//search
+		.g-item-3
 		{
-			.input-group
+			.input-group-append
 			{
-				.input-group-append
+				.btn
 				{
-					.btn
-					{
-						border-radius: 0;
+					border-radius: 0;
 
-						img
-						{
-							width: 15px;
-						}
+					img
+					{
+						width: 15px;
 					}
 				}
 			}
+		}
 
+		.user-login
+		{
 			.user-login
 			{
-				.user-login
-				{
 
-				}
 			}
 		}
+	}
+
+	nav
+	{
+		display: grid !important;
+		grid-template-columns: auto auto auto auto auto;
+		grid-gap: 1rem;
+		grid-template-areas:
+			"logo nav-link search cart login";
+
+			@media screen and (max-width: 500px)
+			{
+				grid-template-areas:
+					"logo cart login menu menu"
+					"search search search search search"
+					"nav-link nav-link nav-link nav-link nav-link";
+			}
+
+		.g-item-1
+		{
+			grid-area: logo;
+		}
+
+		.g-item-2
+		{
+			grid-area: nav-link;
+		}
+
+		.grid-item-3
+		{
+			grid-area: search;
+		}
+
+		.grid-item-4
+		{
+			grid-area: cart;
+		}
+
+		.grid-item-5
+		{
+			grid-area: login;
+		}
+
+		.grid-item-6
+		{
+			grid-area: menu;
+		}
+
 	}
 }
 
