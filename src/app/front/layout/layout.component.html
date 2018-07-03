@@ -1,11 +1,8 @@
 <header id="pageHeader">
-	<nav class="navbar navbar-expand-lg navbar-light bg-custom-primary">
-		<a class="navbar-brand" href="#"><img src="../../../assets/img/logo.png" alt=""></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarText">
-			<ul class="navbar-nav mr-auto ml-4">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-custom-primary">
+		<a class="navbar-brand g-item-1" href="#"><img src="../../../assets/img/logo.png" alt=""></a>
+		<div class="collapse navbar-collapse g-item-2" id="navbarText">
+			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
 					<a class="nav-link" [routerLink]="['']">HOME</a>
 				</li>
@@ -22,45 +19,42 @@
 					<a class="nav-link" href="#">CONTACT US</a>
 				</li>
 			</ul>
-			<span class="navbar-text d-flex align-items-center">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-					<div class="input-group-append">
-						<button class="btn c-btn-secondary btn-search" type="button"><img src="../../../assets/img/svg/Search.svg" alt=""></button>
-					</div>
-				</div>
-				<div class="mx-3">
-					<a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a>
-				</div>
-				<div class="ml-2 user-login">
-					<a [routerLink]="['/login']" class="d-flex align-items-center" style="text-decoration: none;">
-						<img src="../../../assets/img/svg/user.svg" alt="" width="15"> 
-						<span class="ml-2" style="color: #FFCC66; font-size: 14px">LOGIN</span>
-					</a>
-				</div>
-			</span>
 		</div>
+		<div class="input-group g-item-3">
+			<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+			<div class="input-group-append">
+				<button class="btn c-btn-secondary btn-search" type="button"><img src="../../../assets/img/svg/Search.svg" alt=""></button>
+			</div>
+		</div>
+		<div class="g-item-4">
+			<a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a>
+		</div>
+		<div class="user-login g-item-5">
+			<a [routerLink]="['/login']" class="d-flex align-items-center" style="text-decoration: none;">
+				<img src="../../../assets/img/svg/user.svg" alt="" width="15">
+				<span class="ml-2" style="color: #FFCC66; font-size: 14px">LOGIN</span>
+			</a>
+		</div>
+		<button class="navbar-toggler g-item-6" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
 	</nav>
 </header>
-<!-- <ul style="display: flex; list-style-type: none;">
-			<li><a [routerLink]="['']" >HOME</a></li>
-</ul> -->
 <router-outlet></router-outlet>
-
 <footer>
 	<div class="container-fluid">
-		 <div class="footer-content d-flex align-items-center py-3">
-		 	<div class="text-light mr-auto">
-		 		<small>POWERED BY: DIGIMA WEB SOLUTIONS INC.</small>
-		 	</div>
-		 	<div class="text-light ">
-		 		<small>© ULTRA PROACTIVE MARKETING INC 2018</small>
-		 	</div>
-		 	<div class="social-icons ml-auto">
-		 		<a href="#"><img src="../../../assets/img/Instagram.png"></a>
-		 		<a href="#" class="px-4"><img src="../../../assets/img/Twitter.png"></a>
-		 		<a href="#"><img src="../../../assets/img/Facebook.png"></a>
-		 	</div>
-		 </div>
+		<div class="footer-content d-flex align-items-center py-3">
+			<div class="text-light mr-auto">
+				<small>POWERED BY: DIGIMA WEB SOLUTIONS INC.</small>
+			</div>
+			<div class="text-light ">
+				<small>© ULTRA PROACTIVE MARKETING INC 2018</small>
+			</div>
+			<div class="social-icons ml-auto">
+				<a href="#"><img src="../../../assets/img/Instagram.png"></a>
+				<a href="#" class="px-4"><img src="../../../assets/img/Twitter.png"></a>
+				<a href="#"><img src="../../../assets/img/Facebook.png"></a>
+			</div>
+		</div>
 	</div>
 </footer>
