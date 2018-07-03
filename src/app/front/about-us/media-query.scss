@@ -1,4 +1,4 @@
-@import "variables";
+@import "../../../styles";
 
 @media screen and (max-width: $laptop) 
 {
@@ -43,7 +43,7 @@
 	/* END OF ABOUT US */
 }
 
-@media screen and (max-width: $mobile) 
+@media screen and (max-width: $mobile-1) 
 {
 	/* START OF ABOUT US */
 
@@ -55,7 +55,7 @@
 				"aboutUsFigure"
 				"aboutUsText";
 		}
-	{
+	}
 
 	.vm-cv
 	{
