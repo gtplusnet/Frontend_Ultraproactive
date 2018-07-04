@@ -34,6 +34,12 @@
     border-radius: 0rem !important;
 }
 
+.c-btn-r {
+    @extend .c-btn;
+
+    border-radius: 2rem !important;
+}
+
 //BUTTON SIZES
 .c-btn-xs {}
 
@@ -86,4 +92,11 @@
 	color: #fff;
     background-color: $c-btn-2;
     border-color: $c-btn-2;
+}
+
+.c-btn-primary-o
+{
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
 }

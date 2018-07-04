@@ -40,3 +40,13 @@ p
 {
 	color: $text-light !important;
 }
+
+.banner-caption
+{
+	@include text-style($poppins, $semi, 4.392386530014641vw);
+}
+
+.sub-banner-caption
+{
+	@include text-style($poppins, $med, 2.1961932650073206vw);
+}

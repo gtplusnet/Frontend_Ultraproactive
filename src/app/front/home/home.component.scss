@@ -19,6 +19,23 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	@include flex();
+	flex-direction: column;
+
+	.btn-holder
+	{
+		@include flex();
+
+		@media screen and (max-width: $mobile-1)
+		{
+			flex-direction: column;
+
+			button
+			{
+				margin: 1rem 0;
+			}
+		}
+	}
 }
 
 // MAGNENIUM INTRO
@@ -38,13 +55,13 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		@media screen  and (max-width: 500px)
-		{
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
+		// @media screen  and (max-width: 500px)
+		// {
+		// 	background-attachment: fixed;
+		// 	background-position: center;
+		// 	background-repeat: no-repeat;
+		// 	background-size: cover;
+		// }
 	}
 }
 
@@ -86,7 +103,7 @@
 
 	.prod-display-holder
 	{
-		@include flex();
+		// @include flex();
 
 		.prod-order
 		{
