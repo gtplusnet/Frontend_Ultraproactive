@@ -1,5 +1,3 @@
-$red: $c-primary;
-
 @mixin transition($in) {
     transition: $in;
     -webkit-transition: $in;
@@ -29,6 +27,7 @@ $red: $c-primary;
     border: none;
     padding: .375rem .75rem;
     display: block;
+    text-decoration: none;
 
     // margin: 50px auto;
     cursor: pointer;
@@ -42,10 +41,38 @@ $red: $c-primary;
 
 // ################ ONE
 
-.one {
+.glass-green {
+    border-color: $c-btn-2;
+    overflow: hidden;
+    color: $c-btn-2;
+
+    .insider {
+        background-color: $c-btn-2;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        left: -135px;
+
+        @include transform(rotateZ(45deg));
+    }
+
+    &:hover {
+        background-color: $c-btn-2;
+        border-color: $c-btn-2;
+        color: #fff;
+
+        .insider {
+            @include transition(all 0.5s ease);
+
+            left: 135px;
+        }
+    }
+}
+
+.glass-blue {
     border-color: $c-primary;
     overflow: hidden;
-    color: $c-primary;
+    color: $c-primary !important;
 
     .insider {
         background-color: $c-primary;
@@ -58,12 +85,12 @@ $red: $c-primary;
     }
 
     &:hover {
-        background-color: $red;
+        background-color: $c-primary;
         border-color: $c-primary;
-        color: $c-primary;
+        color: #fff !important;
 
         .insider {
-            @include transition(all 0.3s ease);
+            @include transition(all 0.5s ease);
 
             left: 135px;
         }
@@ -76,8 +103,8 @@ $red: $c-primary;
     color: $c-primary;
 
     &:hover {
-        border-color: $red;
-        color: $red;
+        border-color: $c-primary;
+        color: $c-primary;
 
         @include animation(shakeThatBooty 0.3s linear 1);
     }
@@ -107,7 +134,7 @@ $red: $c-primary;
         width: 0;
         height: 3px;
         content: " ";
-        background-color: $red;
+        background-color: $c-primary;
         position: absolute;
         top: 0;
         left: 50%;
@@ -123,7 +150,7 @@ $red: $c-primary;
 
     &:hover {
         letter-spacing: 8px;
-        color: $red;
+        color: $c-primary;
 
         &:before {
             width: 100%;
@@ -139,7 +166,43 @@ $red: $c-primary;
 
 // ################ FOUR
 
-.four {
+.reveal-right {
+    overflow: hidden;
+    background-color: $c-primary;
+
+    span {
+        color: #fff;
+        display: inline-block;
+
+        @include transition(all 0.3s ease);
+    }
+
+    .icon {
+        position: absolute;
+        right: -60px;
+        top: 0;
+        color: #fff;
+
+        // padding: 20px;
+        padding: .375rem .80rem;
+        background-color: $c-primary;
+
+        @include transition(all 0.3s ease);
+    }
+
+    &:hover {
+        .icon {
+            right: 0px;
+        }
+
+        span {
+            color: #fff;
+            margin-right: 20px;
+        }
+    }
+}
+
+.reveal-left-o {
     overflow: hidden;
 
     span {
@@ -157,7 +220,7 @@ $red: $c-primary;
 
         // padding: 20px;
         padding: .375rem .75rem;
-        background-color: $red;
+        background-color: $c-primary;
 
         @include transition(all 0.3s ease);
     }
@@ -168,7 +231,7 @@ $red: $c-primary;
         }
 
         span {
-            color: $red;
+            color: $c-primary;
             margin-left: 50px;
         }
     }
@@ -176,7 +239,7 @@ $red: $c-primary;
 
 // ################ FIVE
 
-.five {
+.reveal-top {
     overflow: hidden;
     color: $c-primary;
 
@@ -189,7 +252,7 @@ $red: $c-primary;
 
         // padding: 20px 0;
         padding: .375rem .75rem;
-        background-color: $red;
+        background-color: rgba($c-primary, 0.9);
 
         @include transition(all 0.3s ease);
     }
@@ -197,6 +260,33 @@ $red: $c-primary;
     &:hover {
         .layer {
             top: 0;
+
+        }
+    }
+}
+
+.reveal-bottom {
+    overflow: hidden;
+    color: $c-primary;
+
+    .layer {
+        color: $c-primary;
+        position: absolute;
+        bottom: -70px;
+        width: 100%;
+        left: 0;
+
+        // padding: 20px 0;
+        padding: .375rem .75rem;
+        background-color: rgba($c-primary, 0.9);
+
+        @include transition(all 0.3s ease);
+    }
+
+    &:hover {
+        .layer {
+            bottom: 0;
+
         }
     }
 }
