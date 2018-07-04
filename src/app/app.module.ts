@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FrontRoutesModule } from './front/front-routes/front-routes.module';
 
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { RegisterComponent } from './front/register/register.component';
   ],
   imports: [
     BrowserModule,
+    AngularFontAwesomeModule,
     FrontRoutesModule
   ],
   providers: [],

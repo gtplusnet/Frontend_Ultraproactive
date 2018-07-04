@@ -63,7 +63,7 @@ header
 			.nav-item
 			{
 				@include transition(.3s);
-				border-bottom: 2px solid transparent;
+				// border-bottom: 2px solid transparent;
 
 				.nav-link
 				{
@@ -71,15 +71,30 @@ header
 					color: $nav-link;
 					padding-left: 1rem;
 					padding-right: 1rem;
+					position: relative;
+				}
+
+				.nav-link:after
+				{
+					content: '';
+					position: absolute;
+					left: 0px;
+					bottom: -5px;
+					width: 0;
+					height: 2px;
+					background-color: $c-secondary;
+					-webkit-transition: width 0.3s ease;
+					-moz-transition: width 0.3s ease;
+					transition: width 0.3s ease;
+				}
+
+				.nav-link:hover:after
+				{
+					width: 100%;
 				}
 
 				&:hover
 				{
-					border-bottom: 2px solid $c-secondary;
-
-					animation: .3s border-bottom;
-					// animation-iteration-count: infinite;
-
 					.nav-link
 					{
 						@include transition(.3s);
@@ -109,6 +124,17 @@ header
 		.g-item-4
 		{
 			justify-self: end !important;
+
+			.my-cart
+			{
+				@include transition(.3s);
+				color: #E9E9E9;
+
+				&:hover
+				{
+					color: #fff;
+				}
+			}
 
 			@media screen and (max-width: 991px)
 			{
@@ -169,5 +195,46 @@ header
 footer
 {
 	background-color: #212121;
+
+	.footer-content
+	{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto;
+		// grid-gap: 1rem;
+		grid-template-areas:
+			"poweredBy company socialIcons";
+
+		.g-item-1
+		{
+			grid-area: poweredBy;
+			justify-self: start;
+		}
+
+		.g-item-2
+		{
+			grid-area: company;
+			justify-self: center;
+		}
+
+		.g-item-3
+		{
+			grid-area: socialIcons;
+			justify-self: end;
+		}
+
+		@media screen and (max-width: $mobile-1)
+		{
+			grid-template-areas:
+				"socialIcons"
+				"company"
+				"poweredBy";
+
+			.g-item-1, .g-item-2, .g-item-3
+			{
+				justify-self: start;
+			}
+		}
+	}
 }
 

@@ -27,7 +27,8 @@
 			</div>
 		</div>
 		<div class="g-item-4">
-			<a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a>
+			<!-- <a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a> -->
+			<a href="javascript:" class="d-flex align-items-center my-cart"><fa name="fas fa-shopping-cart"></fa></a>
 		</div>
 		<div class="user-login g-item-5">
 			<a [routerLink]="['/login']" class="d-flex align-items-center" style="text-decoration: none;">
@@ -43,17 +44,17 @@
 <router-outlet></router-outlet>
 <footer>
 	<div class="container-fluid">
-		<div class="footer-content d-flex align-items-center py-3">
-			<div class="text-light mr-auto">
+		<div class="footer-content py-3">
+			<div class="g-item-1 text-light">
 				<small>POWERED BY: DIGIMA WEB SOLUTIONS INC.</small>
 			</div>
-			<div class="text-light ">
+			<div class="g-item-2 text-light">
 				<small>© ULTRA PROACTIVE MARKETING INC 2018</small>
 			</div>
-			<div class="social-icons ml-auto">
-				<a href="#"><img src="../../../assets/img/Instagram.png"></a>
-				<a href="#" class="px-4"><img src="../../../assets/img/Twitter.png"></a>
-				<a href="#"><img src="../../../assets/img/Facebook.png"></a>
+			<div class="g-item-3 social-icons">
+				<a href="#" class="p-1 text-light"><fa name="fab fa-instagram"></fa></a>
+				<a href="#" class="p-1 text-light"><fa name="fab fa-twitter"></fa></a>
+				<a href="#" class="p-1 text-light"><fa name="fab fa-facebook-f"></fa></a>
 			</div>
 		</div>
 	</div>

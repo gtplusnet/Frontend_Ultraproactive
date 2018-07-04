@@ -1,5 +1,9 @@
 <!-- HOME -->
-<div class="carousel slide" data-ride="carousel">
+<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+	<ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	  </ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
 			<section class="home-banner not-fullscreen background parallax" data-img-width="1366" data-img-height="800" data-diff="100"
@@ -14,18 +18,25 @@
 				</div>
 			</section>
 		</div>
-		<!-- <div class="carousel-item">
-			<section class="home-banner not-fullscreen background parallax" data-img-width="675" data-img-height="387" data-diff="100"
-						style="background-image: url('../../../assets/img/person.jpg')">
-							<button class="c-btn-r0 c-btn-secondary" type="">HELLO</button>
+		<div class="carousel-item">
+			<section class="home-banner not-fullscreen background parallax" data-img-width="1366" data-img-height="800" data-diff="100"
+				style="background-image: url('../../../assets/img/banner-2.png')">
+				<div class="caption-holder">
+					<h1 class="text-white text-center banner-caption">YOUR MIRACLE IN A BOTTLE</h1>
+					<h3 class="text-white text-center sub-banner-caption">Promag 300 Transdermal Magnesium</h3>
+				</div>
+				<div class="btn-holder mt-2">
+					<button type="" class="c-btn-r c-btn-lg c-btn-primary-o mx-2">MAGNENIUM</button>
+					<button type="" class="c-btn-r c-btn-lg c-btn-primary-o mx-2">PROMAG 300</button>
+				</div>
 			</section>
-		</div> -->
+		</div>
 	</div>
-	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	<a class="carousel-control-prev" href="javascript:" data-target="#carouselExampleIndicators" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		<span class="sr-only">Previous</span>
 	</a>
-	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	<a class="carousel-control-next" href="javascript:" data-target="#carouselExampleIndicators" role="button" data-slide="next">
 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>

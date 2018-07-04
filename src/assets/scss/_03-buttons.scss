@@ -96,7 +96,14 @@
 
 .c-btn-primary-o
 {
+    @include transition(.3s);
     color: #fff;
     background-color: transparent;
     border-color: #fff;
+
+    &:hover
+    {
+        background-color: $c-secondary;
+        border-color: $c-secondary;
+    }
 }
