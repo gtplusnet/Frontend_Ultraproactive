@@ -13,7 +13,7 @@
 		grid-template-columns: auto auto;
 		grid-gap: 1rem;
 		grid-template-areas: "aboutUsText aboutUsFigure";
-		// margin-top: 50px;
+		margin-top: 50px;
 
 		.g-item-1
 		{
@@ -39,19 +39,21 @@
 // VISION MISSION AND CORE VALUES
 .vm-cv
 {
+	background-color: #FBFBFB;
+
 	.grid-wrapper
 	{
-		background-color: #FBFBFB;
 		display: grid;
 		grid-template-columns: fit-content(100%);
 		grid-template-rows: auto;
-		grid-gap: 10px;
+		grid-gap: 1rem;
 		padding: 60px 1rem 10px 1rem;
 		align-items: stretch;
 		grid-template-areas:
 			"visionMission visionMission coreValues coreValues"
-			"ourVision ourMission distinction integrity"
-			"legalities legalities filipinoIntegrity sharing";
+			"ourVision ourVision distinction integrity"
+			// "legalities legalities filipinoIntegrity sharing";
+			"ourMission ourMission filipinoIntegrity sharing";
 
 
 		@media screen and (max-width: 1370px) 
@@ -61,8 +63,9 @@
 				"ourVision ourVision ourMission ourMission"
 				"divider divider divider divider"
 				"coreValues coreValues coreValues coreValues"
-				"distinction integrity filipinoIntegrity sharing"
-				"legalities legalities legalities legalities";
+				"distinction integrity integrity filipinoIntegrity"
+				". sharing sharing ."
+				// "legalities legalities legalities legalities";
 		}
 
 		@media screen and (max-width: 800px) 
@@ -74,7 +77,7 @@
 				"coreValues coreValues coreValues coreValues"
 				"distinction distinction integrity integrity"
 				"filipinoIntegrity filipinoIntegrity sharing sharing"
-				"legalities legalities legalities legalities";
+				// "legalities legalities legalities legalities";
 		}
 
 		@media screen and (max-width: 500px)
@@ -89,7 +92,7 @@
 				"integrity"
 				"filipinoIntegrity"
 				"sharing"
-				"legalities";
+				// "legalities";
 		}
 
 		.g-item-1
@@ -141,39 +144,47 @@
 		.g-item-5
 		{
 			grid-area: distinction;
+			background-color: transparent;
+			border: none;
 		}
 
 		.g-item-6
 		{
 			grid-area: integrity;
+			background-color: transparent;
+			border: none;
 		}
 
 		.g-item-7
 		{
 			grid-area: filipinoIntegrity;
+			background-color: transparent;
+			border: none;
 		}
 
 		.g-item-8
 		{
 			grid-area: sharing;
+			background-color: transparent;
+			border: none;
 		}
 
-		.g-item-9
-		{
-			grid-area: legalities;
-			// background-color: #FFBB34;
-			padding: 15px 0;
+		// .g-item-9
+		// {
+		// 	grid-area: legalities;
+		// 	// background-color: #FFBB34;
+		// 	padding: 15px 0;
 
-			@media screen and (max-width: 1370px)
-			{
-				background-color: #eee;
-			}
-		}
+		// 	@media screen and (max-width: 1370px)
+		// 	{
+		// 		background-color: #eee;
+		// 	}
+		// }
 	}
 
 	.grid-wrapper > div
 	{
 		background-color: #fff;
-		border: 1px solid rgba(#000, 0.1);
+		// border: 1px solid rgba(#000, 0.1);
 	}
 }
