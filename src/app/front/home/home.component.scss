@@ -175,42 +175,51 @@
 .testimonial
 {
 	/* The image used */
-	background-image: url("../../../assets/img/testimonial-bg.jpg");
+	background-image: url("../../../assets/img/testimonial-bg.png");
 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	
-	.card
+	.grid
 	{
-		border-radius: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 1rem;
+		align-items: stretch;
 
-		.card-body
+		article
 		{
-			@include flex();
-			flex-direction: column;
-			
-			.img-profile
+			background-color: #fff;
+
+			.testimony
 			{
-				min-width: 70px;
-				max-width: 70px;
+				@include flex();
+				flex-direction: column;
+				padding: 15px;
 				
-				img 
+				.img-profile
 				{
-				    @include transition(.3s);
-				    width: 100%;
-				    border-radius: 100%;
-				    object-fit: cover;
-				    -webkit-filter: grayscale(100%);
+					min-width: 70px;
+					max-width: 70px;
+					
+					img 
+					{
+					    @include transition(.3s);
+					    width: 100%;
+					    border-radius: 100%;
+					    object-fit: cover;
+					    -webkit-filter: grayscale(100%);
 
-				    /* Safari 6.0 - 9.0 */
-				    filter: grayscale(100%);
+					    /* Safari 6.0 - 9.0 */
+					    filter: grayscale(100%);
 
-				    &:hover
-				    {
-				        filter: none;
-				    }
+					    &:hover
+					    {
+					        filter: none;
+					    }
+					}
 				}
 			}
 		}
