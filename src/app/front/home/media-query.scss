@@ -1,0 +1,44 @@
+@import "../../../styles";
+
+@media screen and (max-width: $tablet)
+{
+	.magnesium
+	{
+		grid-template-columns: auto auto;
+		grid-template-areas:
+			"image image"
+			"intro intro";
+	}	
+}
+
+@media screen and(max-width: $mobile-1)
+{
+	.home-banner
+	{
+		.btn-holder
+		{
+			@media screen and (max-width: $mobile-1)
+			{
+				flex-direction: column;
+
+				button
+				{
+					margin: 1rem 0;
+				}
+			}
+		}
+	}
+
+	.magnesium
+	{
+		.grid
+		{
+			grid-template-areas: 
+				"myheader myheader myheader"
+				"paragraph paragraph paragraph"
+				"importance importance importance"
+				"benefits benefits benefits"
+				"uses uses uses";
+		}
+	}
+}
