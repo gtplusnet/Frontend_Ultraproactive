@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
+import { WOW } from 'wowjs';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() 
   {
   		this.parallax();
+      new WOW().init();
   }
 
   parallax() : void
