@@ -43,10 +43,22 @@ p
 
 .banner-caption
 {
-	@include text-style($poppins, $semi, 4.392386530014641vw);
+	// @include text-style($poppins, $semi, 4.392386530014641vw);
+	@include text-style($poppins, $semi, 60px);
+
+	@media screen and (max-width: $mobile-1)
+	{
+		font-size: 30px;
+	}
 }
 
 .sub-banner-caption
 {
-	@include text-style($poppins, $med, 2.1961932650073206vw);
+	// @include text-style($poppins, $med, 2.1961932650073206vw);
+	@include text-style($poppins, $med, 30px);
+
+	@media screen and (max-width: $mobile-1)
+	{
+		font-size: 15px;
+	}
 }

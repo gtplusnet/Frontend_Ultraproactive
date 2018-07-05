@@ -16,6 +16,11 @@
 	@include flex();
 	flex-direction: column;
 
+	// @media screen and (max-width: $mobile-1)
+	// {
+	// 	height: auto;	
+	// }
+
 	.btn-holder
 	{
 		@include flex();
@@ -51,14 +56,9 @@
 	.img-holder
 	{
 		grid-area: image;
-		/* The image used */
 		background-image: url("../../../assets/img/person.jpg");
-
-		/* Full height */
 		height: 100%;
 		padding: 100px;
-
-		/* Center and scale the image nicely */
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
