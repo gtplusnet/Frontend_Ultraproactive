@@ -1,0 +1,64 @@
+@import "../../../styles";
+
+main
+{
+	.grid
+	{
+		display: grid;
+		padding: 100px 0;
+		grid-template-columns: 2fr 3fr;
+		grid-gap: 2rem;
+		grid-template-areas:
+			"category-name category-name"
+			"prod-image prod-desc";
+		align-items: stretch;
+
+		@media screen and (max-width: $mobile-1)
+		{
+			grid-template-areas:
+				"category-name category-name"
+				"prod-image prod-image"
+				"prod-desc prod-desc";
+		}
+
+		.category-name
+		{
+			grid-area: category-name;
+		}
+
+		.prod-image
+		{
+			grid-area: prod-image;
+			// border: 1px solid rgba(#000, 0.1);
+
+			figure
+			{
+				img
+				{
+					object-fit: cover;
+					width: 100%;
+				}
+			}
+		}
+
+		.prod-desc
+		{
+			grid-area: prod-desc;
+
+			.title
+			{
+				border-bottom: 1px solid rgba(#000, 0.1);
+			}
+
+			.name
+			{
+				margin-bottom: 0;
+			}
+
+			.price
+			{
+
+			}
+		}
+	}
+}

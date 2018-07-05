@@ -34,6 +34,11 @@ header
 	{
 	    justify-content: stretch;
 	}
+	
+	.active
+	{
+		color: $c-secondary !important;
+	}
 
 	.navbar
 	{
@@ -49,17 +54,6 @@ header
 
 		.navbar-nav
 		{
-			.active
-			{
-				@include transition(.3s);
-				border-bottom: 2px solid $c-secondary;
-
-				.nav-link
-				{
-					color: $c-secondary !important;
-				}
-			}
-
 			.nav-item
 			{
 				@include transition(.3s);

@@ -1,0 +1,126 @@
+@import "../../../styles";
+
+main
+{
+	.grid
+	{
+		display: grid;
+		padding: 100px 0;
+		grid-template-columns: 1fr 3fr;
+		grid-gap: 2rem;
+		grid-template-areas: "categories products";
+		align-items: stretch;
+
+		.categories
+		{
+			background-color: rgba(#eee, 0.5);
+			border: 1px solid rgba(#000, 0.1);
+			grid-area: categories;
+
+			h4
+			{
+				border-bottom: 1px solid rgba(#000, 0.1);
+				margin-bottom: 0;
+			}
+
+			.nav
+			{
+				.nav-link
+				{
+					@include transition(.3s);
+					border-radius: 0;
+					border-bottom: 1px solid rgba(#000, 0.1);
+					text-decoration: none;
+					color: $text-dark;
+
+					&:hover
+					{
+						background-color: #2CB3A1;
+						color: #fff;
+					}
+				}
+
+				.nav-link.active
+				{
+					background-color: #2CB3A1;
+					color: #fff;
+				}
+			}
+		}
+
+		.products
+		{
+			grid-area: products;
+
+			.tab-pane
+			{
+				.prod-grid-wrapper
+				{
+					display: grid;
+					grid-template-columns: auto auto auto auto;
+					grid-gap: 5px;
+					align-items: stretch;
+
+					.prod-holder
+					{
+						border: 1px solid rgba(#000, 0.1);
+
+						figure
+						{
+							@include transition(0.3s);
+							position: relative;
+							overflow: hidden;
+							z-index: 1;
+							margin-bottom: 0;
+
+							img
+							{
+								object-fit: cover;
+								width: 100%;
+							}
+
+							.overlay
+							{
+								@include flex();
+								@include transition(0.5s);
+								// display: none;
+								top: -70px;
+								width: 100%;
+								height: 100%;
+								text-decoration: none;
+
+								h1
+								{
+									@include transition(0.5s);
+									display: none;
+									color: #fff;
+								}
+							}
+
+							&:hover
+							{
+								.overlay
+								{
+									@include transition(0.5s);
+
+									display: block;
+									position: absolute;
+									top: 0;
+									// left: 0;
+									z-index: 3;
+									background-color: rgba($c-third, 0.5);
+
+									h1
+									{
+										@include transition(0.5s);
+										display: block;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
