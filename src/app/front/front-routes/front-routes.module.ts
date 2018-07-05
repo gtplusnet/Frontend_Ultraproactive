@@ -14,7 +14,7 @@ import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
 const routes: Routes = [
   { path: '', component: LayoutComponent, children: [
-  	{ path: 'home', component: HomeComponent },
+  	{ path: '', component: HomeComponent },
   	{ path: 'login', component: LoginComponent },
   	{ path: 'register', component: RegisterComponent },
   	{ path: 'about-us', component: AboutUsComponent },
