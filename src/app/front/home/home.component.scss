@@ -175,96 +175,105 @@
 		}
 	}
 
-	.prod-display-holder
+	// .prod-display-holder
+	.swiper-container
 	{
 		// @include flex();
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-gap: 1rem;
-		align-items: stretch;
+		// display: grid;
+		// grid-template-columns: 1fr 1fr 1fr 1fr;
+		// grid-gap: 1rem;
+		// align-items: stretch;
 
-		@media screen and (max-width: $tablet)
-		{
-			grid-template-columns: 1fr 1fr;
-		}
+		// @media screen and (max-width: $tablet)
+		// {
+		// 	grid-template-columns: 1fr 1fr;
+		// }
 
-		@media screen and (max-width: $small)
-		{
-			grid-template-columns: 1fr;
-		}
+		// @media screen and (max-width: $small)
+		// {
+		// 	grid-template-columns: 1fr;
+		// }
 
-		.prod-order
+		.swiper-wrapper
 		{
-			@media screen and (max-width: $tablet)
+			.swiper-slide
 			{
-				border: 1px solid rgba(#000, 0.1);
-			}
-
-			.prod-image
-			{
-				@include transition(0.3s);
-				position: relative;
-				overflow: hidden;
-				z-index: 1;
-
-				img
+				.prod-order
 				{
-					object-fit: cover;
-					width: 100%;
-				}
-
-				.overlay
-				{
-					@include flex();
-					@include transition(0.5s);
-					// display: none;
-					top: -70px;
-					width: 100%;
-					height: 100%;
-					text-decoration: none;
-
-					.btn-view-details
+					@media screen and (max-width: $tablet)
 					{
-						@include transition(0.5s);
-						display: none;
+						border: 1px solid rgba(#000, 0.1);
 					}
-				}
 
-				&:hover
-				{
-					.overlay
+					.prod-image
 					{
-						@include transition(0.5s);
+						@include transition(0.3s);
+						position: relative;
+						overflow: hidden;
+						z-index: 1;
 
-						display: block;
-						position: absolute;
-						top: 0;
-						// left: 0;
-						z-index: 3;
-						background-color: rgba($c-third, 0.5);
-
-						.btn-view-details
+						img
 						{
+							object-fit: cover;
+							width: 100%;
+						}
+
+						.overlay
+						{
+							@include flex();
 							@include transition(0.5s);
-							display: block;
+							// display: none;
+							top: -70px;
+							width: 100%;
+							height: 100%;
+							text-decoration: none;
+
+							.btn-view-details
+							{
+								@include transition(0.5s);
+								display: none;
+							}
+						}
+
+						&:hover
+						{
+							.overlay
+							{
+								@include transition(0.5s);
+
+								display: block;
+								position: absolute;
+								top: 0;
+								// left: 0;
+								z-index: 3;
+								background-color: rgba($c-third, 0.5);
+
+								.btn-view-details
+								{
+									@include transition(0.5s);
+									display: block;
+								}
+							}
+						}
+					}
+
+					.prod-info
+					{
+
+					}
+
+					.prod-cart
+					{
+						button
+						{
+							@include flex();
 						}
 					}
 				}
 			}
-
-			.prod-info
-			{
-
-			}
-
-			.prod-cart
-			{
-				button
-				{
-					@include flex();
-				}
-			}
 		}
+
+
 	}
 }
 
@@ -279,26 +288,66 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	
-	.grid
+	// .grid
+	// {
+	// 	display: grid;
+	// 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	// 	grid-gap: 1rem;
+	// 	align-items: stretch;
+
+	// 	@media screen and (max-width: $tablet)
+	// 	{
+	// 		grid-template-columns: 1fr 1fr;
+	// 	}
+
+	// 	@media screen and (max-width: $small)
+	// 	{
+	// 		grid-template-columns: 1fr;
+	// 	}
+
+	// 	article
+	// 	{
+	// 		background-color: #fff;
+
+	// 		.testimony
+	// 		{
+	// 			@include flex();
+	// 			flex-direction: column;
+	// 			padding: 15px;
+				
+	// 			.img-profile
+	// 			{
+	// 				min-width: 70px;
+	// 				max-width: 70px;
+					
+	// 				img 
+	// 				{
+	// 				    @include transition(.3s);
+	// 				    width: 100%;
+	// 				    border-radius: 100%;
+	// 				    object-fit: cover;
+	// 				    -webkit-filter: grayscale(100%);
+
+	// 				    /* Safari 6.0 - 9.0 */
+	// 				    filter: grayscale(100%);
+
+	// 				    &:hover
+	// 				    {
+	// 				        filter: none;
+	// 				    }
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	.swiper-wrapper
 	{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-gap: 1rem;
-		align-items: stretch;
-
-		@media screen and (max-width: $tablet)
-		{
-			grid-template-columns: 1fr 1fr;
-		}
-
-		@media screen and (max-width: $small)
-		{
-			grid-template-columns: 1fr;
-		}
-
-		article
+		.swiper-slide
 		{
 			background-color: #fff;
+			min-height: 350px;
+			max-height: 350px;
 
 			.testimony
 			{

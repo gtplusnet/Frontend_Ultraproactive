@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
 import { WOW } from 'wowjs';
+// import  * as Swiper from "swiper";
 
 @Component({
 	selector: 'app-home',
@@ -14,19 +15,54 @@ export class HomeComponent implements OnInit
 
 	ngOnInit() 
 	{
-		// this.wowjs();
 		new WOW().init();
 		this.parallax();
+        this.swiper();
 	}
 
-	// wowjs() : void
-	// {
-	// 	var wow = new WOW({
-	// 	    live: false
-	// 	});
+  swiper() : void
+  {
+      var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            autoplay:
+            {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            spaceBetween: 16,
 
-	// 	wow.init();
-	// }
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+
+            breakpoints: {
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              }
+            },
+
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+
+          });
+  }
 
 	parallax() : void
 	{
