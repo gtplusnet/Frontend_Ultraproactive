@@ -13,56 +13,105 @@ export class HomeComponent implements OnInit
 
 	constructor() { }
 
-	ngOnInit() 
+	ngOnInit()
 	{
 		new WOW().init();
 		this.parallax();
-        this.swiper();
+        this.product_swiper();
+        this.testimonial_swiper();
 	}
 
-  swiper() : void
-  {
-      var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 4,
-            autoplay:
-            {
-              delay: 2500,
-              disableOnInteraction: false,
-            },
-            spaceBetween: 16,
+     product_swiper() : void
+     {
+         var swiper = new Swiper('.product-container', 
+         {
+             slidesPerView: 4,
+             loop: true,
+             autoplay:
+             {
+                 delay: 2500,
+                 disableOnInteraction: false,
+             },
+             spaceBetween: 16,
 
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-
-            breakpoints: {
-              1024: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-              },
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              }
-            },
+             breakpoints: {
+                 1024: {
+                     slidesPerView: 4,
+                     spaceBetween: 40,
+                 },
+                 768: {
+                     slidesPerView: 3,
+                     spaceBetween: 30,
+                 },
+                 640: {
+                     slidesPerView: 2,
+                     spaceBetween: 20,
+                 },
+                 320: {
+                     slidesPerView: 1,
+                     spaceBetween: 10,
+                 }
+             },
 
             // Navigation arrows
             navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
 
-          });
-  }
+        });
+     }
+
+     testimonial_swiper(): void
+     {
+         var swiper = new Swiper('.swiper-container', 
+         {
+             effect: 'coverflow',
+             grabCursor: true,
+             slidesPerView: 4,
+             centeredSlides: true,
+             loop: true,
+             coverflowEffect: {
+                 rotate: 50,
+                 stretch: 0,
+                 depth: 100,
+                 modifier: 1,
+                 slideShadows : true,
+             },
+             autoplay:
+             {
+                 delay: 2500,
+                 disableOnInteraction: false,
+             },
+             spaceBetween: 16,
+
+             breakpoints: {
+                 1024: {
+                     slidesPerView: 4,
+                     spaceBetween: 40,
+                 },
+                 768: {
+                     slidesPerView: 3,
+                     spaceBetween: 30,
+                 },
+                 640: {
+                     slidesPerView: 2,
+                     spaceBetween: 20,
+                 },
+                 320: {
+                     slidesPerView: 1,
+                     spaceBetween: 10,
+                 }
+             },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+     }
 
 	parallax() : void
 	{

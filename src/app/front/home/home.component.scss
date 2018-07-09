@@ -176,8 +176,9 @@
 	}
 
 	// .prod-display-holder
-	.swiper-container
+	.product-container
 	{
+		overflow: hidden;
 		// @include flex();
 		// display: grid;
 		// grid-template-columns: 1fr 1fr 1fr 1fr;
