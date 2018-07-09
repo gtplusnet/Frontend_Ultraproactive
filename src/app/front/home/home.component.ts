@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
 import { WOW } from 'wowjs';
-// import  * as Swiper from "swiper";
+import Swiper from "swiper";
 
 @Component({
 	selector: 'app-home',
