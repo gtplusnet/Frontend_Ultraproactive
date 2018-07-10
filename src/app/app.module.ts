@@ -12,6 +12,7 @@ import { RegisterComponent } from './front/register/register.component';
 import { ProductComponent } from './front/product/product.component';
 import { ProductContentComponent } from './front/product-content/product-content.component';
 import { TestimonialComponent } from './front/testimonial/testimonial.component';
+import { ContactUsComponent } from './front/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TestimonialComponent } from './front/testimonial/testimonial.component'
     RegisterComponent,
     ProductComponent,
     ProductContentComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
