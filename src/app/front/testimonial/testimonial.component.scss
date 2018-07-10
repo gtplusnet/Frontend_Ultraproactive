@@ -24,8 +24,14 @@
 
 	article
 	{
+		@include transition(.3s);
 		background-color: rgba(#eee, 0.1);
 		border: 1px solid rgba(#000, .1);
+
+		&:hover
+		{
+			background-color: rgba(#336799, .1);
+		}
 
 		.testimony
 		{
@@ -53,6 +59,35 @@
 				    {
 				        filter: none;
 				    }
+				}
+			}
+
+			.name
+			{
+				font-size: 1.2rem;
+			}
+
+			.social-icon
+			{
+				a
+				{
+					@include transition(.3s);
+					font-size: 1.2rem;
+				}
+
+				a:nth-child(1):hover
+				{
+					color: #c32aa3 !important;
+				}
+
+				a:nth-child(2):hover
+				{
+					color: #00aced !important;
+				}
+
+				a:nth-child(3):hover
+				{
+					color: #3b5998 !important;
 				}
 			}
 		}
