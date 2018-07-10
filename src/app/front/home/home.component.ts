@@ -17,40 +17,60 @@ export class HomeComponent implements OnInit
 	{
 		new WOW().init();
 		this.parallax();
+        this.home_swiper();
         this.product_swiper();
         this.testimonial_swiper();
-	}
+    }
 
-     product_swiper() : void
-     {
-         var swiper = new Swiper('.product-container', 
-         {
-             slidesPerView: 4,
-             autoplay:
-             {
-                 delay: 2500,
-                 disableOnInteraction: false,
-             },
-             spaceBetween: 16,
+    home_swiper(): void
+    {
+        var swiper = new Swiper('.home-swiper-container', {
+            autoplay:
+            {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
 
-             breakpoints: {
-                 1024: {
-                     slidesPerView: 4,
-                     spaceBetween: 40,
-                 },
-                 768: {
-                     slidesPerView: 3,
-                     spaceBetween: 30,
-                 },
-                 640: {
-                     slidesPerView: 2,
-                     spaceBetween: 20,
-                 },
-                 320: {
-                     slidesPerView: 1,
-                     spaceBetween: 10,
-                 }
-             },
+    product_swiper() : void
+    {
+        var swiper = new Swiper('.product-container', 
+        {
+            slidesPerView: 4,
+            autoplay:
+            {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 16,
+
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            },
 
             // Navigation arrows
             navigation: {
@@ -59,49 +79,48 @@ export class HomeComponent implements OnInit
             },
 
         });
-     }
+    }
 
-     testimonial_swiper(): void
-     {
-         var swiper = new Swiper('.swiper-container', 
-         {
-             effect: 'coverflow',
-             grabCursor: true,
-             slidesPerView: 4,
-             centeredSlides: true,
-             loop: true,
-             coverflowEffect: {
-                 rotate: 50,
-                 stretch: 0,
-                 depth: 100,
-                 modifier: 1,
-                 slideShadows : true,
-             },
-             autoplay:
-             {
-                 delay: 2500,
-                 disableOnInteraction: false,
-             },
-             spaceBetween: 16,
+    testimonial_swiper(): void
+    {
+        var swiper = new Swiper('.testimonial-swiper-container', 
+        {
+            effect: 'coverflow',
+            grabCursor: true,
+            slidesPerView: 4,
+            centeredSlides: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            autoplay:
+            {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 16,
 
-             breakpoints: {
-                 1024: {
-                     slidesPerView: 4,
-                     spaceBetween: 40,
-                 },
-                 768: {
-                     slidesPerView: 3,
-                     spaceBetween: 30,
-                 },
-                 640: {
-                     slidesPerView: 1,
-                     spaceBetween: 20,
-                 },
-                 320: {
-                     slidesPerView: 1,
-                     spaceBetween: 10,
-                 }
-             },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            },
 
             // Navigation arrows
             navigation: {
@@ -110,35 +129,35 @@ export class HomeComponent implements OnInit
             },
 
         });
-     }
+    }
 
-	parallax() : void
-	{
-		if("ontouchstart" in window)
-		{
-			document.documentElement.className = document.documentElement.className + " touch";
-		}
+    parallax() : void
+    {
+        if("ontouchstart" in window)
+        {
+            document.documentElement.className = document.documentElement.className + " touch";
+        }
 
-		if(!$("html").hasClass("touch"))
-		{
-			/* background fix */
-			$(".parallax").css("background-attachment", "fixed");
-		}
+        if(!$("html").hasClass("touch"))
+        {
+            /* background fix */
+            $(".parallax").css("background-attachment", "fixed");
+        }
 
-		$(window).resize(this.fullscreenFix);
-		this.fullscreenFix();
+        $(window).resize(this.fullscreenFix);
+        this.fullscreenFix();
 
-		$(window).resize(this.backgroundResize);
-		$(window).focus(this.backgroundResize);
-		this.backgroundResize();
+        $(window).resize(this.backgroundResize);
+        $(window).focus(this.backgroundResize);
+        this.backgroundResize();
 
-		if(!$("html").hasClass("touch"))
-		{
-			$(window).resize(this.parallaxPosition);
+        if(!$("html").hasClass("touch"))
+        {
+            $(window).resize(this.parallaxPosition);
           //$(window).focus(this.parallaxPosition);
           $(window).scroll(this.parallaxPosition);
           this.parallaxPosition();
-      	}
+      }
   }
 
   fullscreenFix() : void
