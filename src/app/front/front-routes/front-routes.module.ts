@@ -9,6 +9,7 @@ import { HomeComponent } from '../home/home.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { ProductComponent } from '../product/product.component';
 import { ProductContentComponent } from '../product-content/product-content.component';
+import { TestimonialComponent } from '../testimonial/testimonial.component';
 
 import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
@@ -19,7 +20,8 @@ const routes: Routes = [
   	{ path: 'register', component: RegisterComponent },
   	{ path: 'about-us', component: AboutUsComponent },
   	{ path: 'product', component: ProductComponent },
-  	{ path: 'product/product_content', component: ProductContentComponent }
+    { path: 'product/product_content', component: ProductContentComponent }
+  	{ path: 'testimonial', component: TestimonialComponent }
   ] }
 ];
 

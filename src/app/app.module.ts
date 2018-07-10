@@ -11,6 +11,7 @@ import { LoginComponent } from './front/login/login.component';
 import { RegisterComponent } from './front/register/register.component';
 import { ProductComponent } from './front/product/product.component';
 import { ProductContentComponent } from './front/product-content/product-content.component';
+import { TestimonialComponent } from './front/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductContentComponent } from './front/product-content/product-content
     LoginComponent,
     RegisterComponent,
     ProductComponent,
-    ProductContentComponent
+    ProductContentComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,

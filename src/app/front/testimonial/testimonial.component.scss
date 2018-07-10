@@ -1,0 +1,60 @@
+@import "../../../styles";
+
+*
+{
+	font-family: $lato;
+}
+
+.grid
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1rem;
+	align-items: stretch;
+
+	@media screen and (max-width: $tablet)
+	{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: $small)
+	{
+		grid-template-columns: 1fr;
+	}
+
+	article
+	{
+		background-color: rgba(#eee, 0.1);
+		border: 1px solid rgba(#000, .1);
+
+		.testimony
+		{
+			@include flex();
+			flex-direction: column;
+			padding: 15px;
+			
+			.img-profile
+			{
+				min-width: 70px;
+				max-width: 70px;
+				
+				img 
+				{
+				    @include transition(.3s);
+				    width: 100%;
+				    border-radius: 100%;
+				    object-fit: cover;
+				    -webkit-filter: grayscale(100%);
+
+				    /* Safari 6.0 - 9.0 */
+				    filter: grayscale(100%);
+
+				    &:hover
+				    {
+				        filter: none;
+				    }
+				}
+			}
+		}
+	}
+}

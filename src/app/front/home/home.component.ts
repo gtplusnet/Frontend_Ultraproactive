@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit
          var swiper = new Swiper('.product-container', 
          {
              slidesPerView: 4,
-             loop: true,
              autoplay:
              {
                  delay: 2500,
@@ -95,7 +94,7 @@ export class HomeComponent implements OnInit
                      spaceBetween: 30,
                  },
                  640: {
-                     slidesPerView: 2,
+                     slidesPerView: 1,
                      spaceBetween: 20,
                  },
                  320: {
