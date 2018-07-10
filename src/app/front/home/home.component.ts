@@ -10,7 +10,6 @@ import Swiper from "swiper";
 })
 export class HomeComponent implements OnInit 
 {
-
 	constructor() { }
 
 	ngOnInit()
@@ -77,7 +76,6 @@ export class HomeComponent implements OnInit
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
         });
     }
 
