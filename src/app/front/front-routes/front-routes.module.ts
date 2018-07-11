@@ -21,8 +21,8 @@ const routes: Routes = [
   	{ path: 'register', component: RegisterComponent },
   	{ path: 'about-us', component: AboutUsComponent },
   	{ path: 'product', component: ProductComponent },
-    { path: 'product/product_content', component: ProductContentComponent }
-    { path: 'testimonial', component: TestimonialComponent }
+    { path: 'product/product_content', component: ProductContentComponent },
+    { path: 'testimonial', component: TestimonialComponent },
   	{ path: 'contact-us', component: ContactUsComponent }
   ] }
 ];

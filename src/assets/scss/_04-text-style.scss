@@ -1,75 +1,71 @@
 @import "01-variables";
 @import "02-mixins";
 
-h2
-{
-	@include text-style($poppins, $med, 30px);
+h2 {
+    @include text-style($poppins, $med, 30px);
 }
 
-p
-{
-	@include text-style($lato, $light, 16px);
+p {
+    @include text-style($lato, $light, 16px);
 }
 
-.decoration-0
-{
-	text-decoration: none !important;
+.decoration-0 {
+    text-decoration: none !important;
 
-	&:hover
-	{
-		color: $text-light !important;
-	}
+    &:hover {
+        color: $text-light !important;
+    }
 }
 
-.c-primary
-{
-	color: $c-primary;
+.c-primary {
+    color: $c-primary;
 }
 
-.c-secondary
-{
-	color: $c-secondary;
+.c-secondary {
+    color: $c-secondary;
 }
 
-.text-dark
-{
-	color: $text-dark !important;
+.text-dark {
+    color: $text-dark !important;
 }
 
-.text-light
-{
-	color: $text-light !important;
+.text-light {
+    color: $text-light !important;
 }
 
-.banner-caption
-{
-	// @include text-style($poppins, $semi, 4.392386530014641vw);
-	@include text-style($poppins, $semi, 60px);
+.banner-caption {
+    // @include text-style($poppins, $semi, 4.392386530014641vw);
+    @include text-style($poppins, $semi, 60px);
 
-	@media screen and (max-width: $mobile-1)
-	{
-		font-size: 30px;
-	}
+    @media screen and (max-width: $mobile-1) {
+        font-size: 30px;
+    }
 }
 
-.sub-banner-caption
-{
-	// @include text-style($poppins, $med, 2.1961932650073206vw);
-	@include text-style($poppins, $med, 30px);
+.sub-banner-caption {
+    // @include text-style($poppins, $med, 2.1961932650073206vw);
+    @include text-style($poppins, $med, 30px);
 
-	@media screen and (max-width: $mobile-1)
-	{
-		font-size: 15px;
-	}
+    @media screen and (max-width: $mobile-1) {
+        font-size: 15px;
+    }
 }
 
 .text-limit {
-   overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   line-height: 17px;     /* fallback */
-   min-height: 35px;      /* fallback */
-   max-height: 35px;      /* fallback */
-   -webkit-line-clamp: 2; /* number of lines to show */
-   -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 17px;
+
+    /* fallback */
+    min-height: 35px;
+
+    /* fallback */
+    max-height: 35px;
+
+    /* fallback */
+    -webkit-line-clamp: 2;
+
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
 }

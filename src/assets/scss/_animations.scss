@@ -7,3 +7,19 @@
     	border-bottom: 2px solid $c-secondary;
     }
 }
+
+@keyframes anim-1{
+
+	0%
+	{
+		transform: rotate(xx) translateY(0%);
+	}
+	50%
+	{
+		transform: translateY(-2%);
+	}
+	100%
+	{
+		transform: rotate(xx) translateY(0%);
+	}
+}

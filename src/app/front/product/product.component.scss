@@ -55,6 +55,7 @@ main
 					{
 						background-color: #2CB3A1;
 						color: #fff;
+						// animation: anim-1 .3s 1 0s ease-in;
 					}
 				}
 
@@ -140,6 +141,11 @@ main
 									}
 								}
 							}
+						}
+
+						&:hover
+						{
+							animation: anim-1 .3s 1 0s ease-in;
 						}
 					}
 				}
