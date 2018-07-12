@@ -12,7 +12,7 @@
 
 	0%
 	{
-		transform: rotate(xx) translateY(0%);
+		transform: translateY(0%);
 	}
 	50%
 	{
@@ -20,6 +20,21 @@
 	}
 	100%
 	{
-		transform: rotate(xx) translateY(0%);
+		transform: translateY(0%);
+	}
+}
+
+@keyframes anim-2{
+	0%
+	{
+		transform: translateX(0px);
+	}
+	50%
+	{
+		transform: translateX(-5px);
+	}
+	100%
+	{
+		transform: translateX(0px);
 	}
 }
