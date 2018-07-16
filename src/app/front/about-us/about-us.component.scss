@@ -10,7 +10,7 @@
 	.grid-wrapper
 	{
 		display: grid;
-		grid-template-columns: auto auto;
+    	grid-template-columns: auto auto;
 		grid-gap: 1rem;
 		grid-template-areas: "aboutUsText aboutUsFigure";
 		margin-top: 50px;
