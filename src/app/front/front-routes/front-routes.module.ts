@@ -16,15 +16,15 @@ import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
 const routes: Routes = [
   { path: '', component: LayoutComponent, children: [
-  { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'product', component: ProductComponent },
-  { path: 'product/product_content', component: ProductContentComponent },
-  { path: 'testimonial', component: TestimonialComponent },
-  { path: 'contact-us', component: ContactUsComponent }
-  ] }
+    { path: '', component: HomeComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent },
+    { path: 'about-us', component: AboutUsComponent },
+    { path: 'product', component: ProductComponent },
+    { path: 'product/product_content', component: ProductContentComponent },
+    { path: 'testimonial', component: TestimonialComponent },
+    { path: 'contact-us', component: ContactUsComponent }
+    ] }
 ];
 
 @NgModule({
