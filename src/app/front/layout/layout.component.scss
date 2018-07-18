@@ -232,3 +232,13 @@ footer
 	}
 }
 
+.modal-content
+{
+	border-radius: 0;
+
+	.modal-header
+	{
+		background-color: $c-primary;
+		border-radius: 0;
+	}
+}

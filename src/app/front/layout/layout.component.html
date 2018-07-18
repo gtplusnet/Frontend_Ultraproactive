@@ -28,7 +28,9 @@
 		</div>
 		<div class="g-item-4">
 			<!-- <a href="#" class="d-flex align-items-center"><img src="../../../assets/img/svg/cart.svg" alt="" width="15"></a> -->
-			<a href="javascript:" class="d-flex align-items-center my-cart"><fa name="fas fa-shopping-cart"></fa></a>
+		<a href="javascript:" class="d-flex align-items-center my-cart" data-toggle="modal" data-target="#exampleModal">
+		<fa name="fas fa-shopping-cart"></fa>
+		</a>
 		</div>
 		<div class="user-login g-item-5">
 			<a [routerLink]="['/login']" class="d-flex align-items-center" style="text-decoration: none;">
@@ -59,3 +61,24 @@
 		</div>
 	</div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-white" id="exampleModalLabel">MY SHOPPING CART</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<h4 class="text-center text-light"> NO PRODUCT IN CART YET</h4>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
