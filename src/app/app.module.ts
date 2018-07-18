@@ -13,6 +13,8 @@ import { ProductComponent } from './front/product/product.component';
 import { ProductContentComponent } from './front/product-content/product-content.component';
 import { TestimonialComponent } from './front/testimonial/testimonial.component';
 import { ContactUsComponent } from './front/contact-us/contact-us.component';
+import { WhatIsMagnesiumComponent } from './front/what-is-magnesium/what-is-magnesium.component';
+import { BenefitsComponent } from './front/benefits/benefits.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ContactUsComponent } from './front/contact-us/contact-us.component';
     ProductComponent,
     ProductContentComponent,
     TestimonialComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    WhatIsMagnesiumComponent,
+    BenefitsComponent
   ],
   imports: [
     BrowserModule,

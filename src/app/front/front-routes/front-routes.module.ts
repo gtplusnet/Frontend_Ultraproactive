@@ -11,6 +11,7 @@ import { ProductComponent } from '../product/product.component';
 import { ProductContentComponent } from '../product-content/product-content.component';
 import { TestimonialComponent } from '../testimonial/testimonial.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
+import { WhatIsMagnesiumComponent } from '../what-is-magnesium/what-is-magnesium.component';
 
 import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
@@ -23,7 +24,8 @@ const routes: Routes = [
     { path: 'product', component: ProductComponent },
     { path: 'product/product_content', component: ProductContentComponent },
     { path: 'testimonial', component: TestimonialComponent },
-    { path: 'contact-us', component: ContactUsComponent }
+    { path: 'contact-us', component: ContactUsComponent },
+    { path: 'what-is-magnesium', component: WhatIsMagnesiumComponent }
     ] }
 ];
 
