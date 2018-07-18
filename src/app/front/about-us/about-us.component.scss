@@ -32,6 +32,11 @@
 			grid-template-areas:
 				"aboutUsFigure"
 				"aboutUsText";
+
+			.g-item-2
+			{
+				margin-top: 50px;
+			}
 		}
 	}
 }
@@ -146,6 +151,11 @@
 			grid-area: distinction;
 			background-color: transparent;
 			border: none;
+			@include transition(.3s);
+
+			&:hover {
+				background-color: #fff;
+			}
 		}
 
 		.g-item-6
@@ -153,6 +163,11 @@
 			grid-area: integrity;
 			background-color: transparent;
 			border: none;
+			@include transition(.3s);
+
+			&:hover {
+				background-color: #fff;
+			}
 		}
 
 		.g-item-7
@@ -160,6 +175,11 @@
 			grid-area: filipinoIntegrity;
 			background-color: transparent;
 			border: none;
+			@include transition(.3s);
+
+			&:hover {
+				background-color: #fff;
+			}
 		}
 
 		.g-item-8
@@ -167,6 +187,11 @@
 			grid-area: sharing;
 			background-color: transparent;
 			border: none;
+			@include transition(.3s);
+			
+			&:hover {
+				background-color: #fff;
+			}
 		}
 
 		// .g-item-9

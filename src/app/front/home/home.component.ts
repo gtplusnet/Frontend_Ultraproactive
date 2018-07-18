@@ -166,8 +166,8 @@ export class HomeComponent implements OnInit {
           // constiables
           const contW = path.width();
           const contH = path.height();
-          let imgW = parseInt(path.attr('data-img-width'), 0);
-          let imgH = parseInt(path.attr('data-img-height'), 0);
+          let imgW = parseInt(path.attr('data-img-width'), null);
+          let imgH = parseInt(path.attr('data-img-height'), null);
           const ratio = imgW / imgH;
           // overflowing difference
           let diff = parseFloat(path.attr('data-diff'));

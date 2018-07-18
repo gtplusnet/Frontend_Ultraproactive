@@ -2,6 +2,13 @@
 
 main
 {
+	@media screen and (max-width: 500px)
+	{
+		h2
+		{
+			margin-top: 75px !important;
+		}
+	}
 	.grid
 	{
 		display: grid;

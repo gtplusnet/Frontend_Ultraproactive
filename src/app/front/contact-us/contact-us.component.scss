@@ -1,5 +1,12 @@
 @import "../../../styles";
 
+@media screen and (max-width: 500px) 
+{
+	h2 
+	{
+		margin-top: 75px !important;
+	}
+}
 .form-control
 {
 	border-radius: 0;
