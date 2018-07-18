@@ -41,11 +41,11 @@ export class HomeComponent implements OnInit {
         const swiper = new Swiper('.product-container',
         {
             slidesPerView: 4,
-            // autoplay:
-            // {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay:
+            {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             spaceBetween: 16,
 
             breakpoints: {
