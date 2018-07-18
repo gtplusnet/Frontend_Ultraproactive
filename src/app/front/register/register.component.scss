@@ -33,6 +33,10 @@
 		background-color: #555;
 		width: 800px;
 
+		@media screen and (max-width: 575px) {
+		  margin-top: 45px;
+		}
+
 		.card
 		{
 			.c-header
